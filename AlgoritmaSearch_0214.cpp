@@ -25,3 +25,6 @@ void input(){
     }
 
 }
+ void LinearSearch(){
+    
+ }
