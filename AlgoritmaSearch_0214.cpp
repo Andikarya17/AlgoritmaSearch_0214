@@ -42,6 +42,8 @@ void input(){
             if (arr[i] == item) {
                 cout << "\n" << item << "found at pisition" << (i + 1) << endl;    
                 break;
+            }
+            i++;
         }
-        i++;
+        
  }
