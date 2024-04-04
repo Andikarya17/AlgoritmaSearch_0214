@@ -43,4 +43,5 @@ void input(){
                 cout << "\n" << item << "found at pisition" << (i + 1) << endl;    
                 break;
         }
+        i++;
  }
