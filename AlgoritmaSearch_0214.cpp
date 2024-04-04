@@ -30,20 +30,28 @@ void input(){
     int ctr;
     int item;
 
-    // Accept the number to be  searched
-        cout << "\nEnter the  element you want to search :";
+   do {
+
+        // Accept the number to be  searched
+        cout << "\nEnter the  element you want to search :";                         
         cin >> item;
 
         ctr = 0;
-        i = 0;
-        while (i < n)
-        {
+        i = 0;                                                                      
+
+        while (i < n) {                                                            
             ctr++;
             if (arr[i] == item) {
                 cout << "\n" << item << "found at pisition" << (i + 1) << endl;    
                 break;
             }
-            i++;
+            i++;                                                                  
         }
-        
- }
+
+        if (i == n)                                                               
+            cout << "\n" << item << "not found in the array\n";
+        cout << "\nNumber of comparisons :" << ctr << endl;
+        cout << "\nContinue search (y/n) :";
+        cin >> ch;
+    } while ((ch == 'y') || (ch == 'Y'));
+}
