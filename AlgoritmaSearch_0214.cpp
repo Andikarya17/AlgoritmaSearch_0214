@@ -29,4 +29,7 @@ void input(){
     char ch;
     int ctr;
     int item;
+
+    // Accept the number to be  searched
+        cout << "\nEnter the  element you want to search :";
  }
